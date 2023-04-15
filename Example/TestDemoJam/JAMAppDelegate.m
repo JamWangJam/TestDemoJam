@@ -7,12 +7,18 @@
 //
 
 #import "JAMAppDelegate.h"
+#import "WbwPerson.h"
 
 @implementation JAMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    WbwPerson * person = [[WbwPerson alloc]init];
+    [person say];
+    
+    
     return YES;
 }
 
