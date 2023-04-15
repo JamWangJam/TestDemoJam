@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'TestDemoJam_Example' do
+  pod 'TestDemoJam', :path => '../'
+
+  target 'TestDemoJam_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
